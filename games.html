@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="navbar">
+      <div id="logo">
+        <img src="images/logo.png" alt="Pikachu!!" />
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a id="type" href="#">Types</a>
+          <div class="dropdown-content">
+            <a href="/normal.html" id="l1">Normal</a>
+            <a href="/fighting.html" id="l2">Fighting</a>
+            <a href="/flying.html" id="l3">Flying</a>
+            <a href="/poison.html" id="l4">Poison</a>
+            <a href="/ground.html" id="l5">Ground</a>
+            <a href="/rock.html" id="l6">Rock</a>
+            <a href="/bug.html" id="l7">Bug</a>
+            <a href="/ghost.html" id="l8">Ghost</a>
+            <a href="/steel.html" id="l9">Steel</a>
+            <a href="/fire.html" id="l10">Fire</a>
+            <a href="/water.html" id="l11">Water</a>
+            <a href="/grass.html" id="l12">Grass</a>
+            <a href="/electric.html" id="l13">Electric</a>
+            <a href="/psychic.html" id="l14">Psychic</a>
+            <a href="/ice.html" id="l15">Ice</a>
+            <a href="/dragon.html" id="l16">Dragon</a>
+            <a href="/dark.html" id="l17">Dark</a>
+            <a href="/fairy.html" id="l18">Fairy</a>
+          </div>
+        </li>
+        <li>
+          <a id="game" href="/games.html">Games</a>
+        </li>
+        <li><a href="#contact">Get in touch</a></li>
+      </ul>
+      <!-- <div id="searchbar">
+            <input type="text" placeholder="Search Pokemon">
+        </div>
+        <div id="btn">
+            <input type="submit" value="Let's Go!!">
+        </div> -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+    </section>
+
+    <section id="games-div">
+      <!-- idea is to put a dropdown menu for all 8 generations
+        in each generation, put the starter final forms in flex
+        then, put a smaller dropdown menu of all of its games
+        then, put some legendaries of that generation -->
+
+        <div id="gen1">
+            <div class="topic_gen">
+              <h1>Generation 1</h1>
+              <button onclick="myFunction1()" class="gen_submit1">
+                Read More...
+              </button>
+            </div>
+            <div id="gen1_desc" class="gen_desc">
+              <img src="images/trainers/gen1m.png" alt="gen1 male trainer" class="trainer_pic trainer_left">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+              </p>
+              <img src="images/trainers/gen1f.png" alt="gen1 female trainer" class="trainer_pic trainer_right">
+            </div>
+          </div>
+    
+          <div id="gen2">
+            <div class="topic_gen">
+              <h1>Generation 2</h1>
+              <button onclick="myFunction2()" class="gen_submit2">
+                Read More...
+              </button>
+            </div>
+            <div id="gen2_desc" class="gen_desc">
+              <img src="images/trainers/gen2m.png" alt="gen2 male trainer" class="trainer_pic trainer_left">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+              </p>
+              <img src="images/trainers/gen2f.png" alt="gen2 female trainer" class="trainer_pic trainer_right">
+            </div>
+          </div>
+
+      <div id="gen3">
+        <div class="topic_gen">
+          <h1>Generation 3</h1>
+          <button onclick="myFunction3()" class="gen_submit3">
+            Read More...
+          </button>
+        </div>
+        <div id="gen3_desc" class="gen_desc">
+          <img src="images/trainers/gen3m.png" alt="gen3 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen3f.png" alt="gen3 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+
+      <div id="gen4">
+        <div class="topic_gen">
+          <h1>Generation 4</h1>
+          <button onclick="myFunction4()" class="gen_submit4">
+            Read More...
+          </button>
+        </div>
+        <div id="gen4_desc" class="gen_desc">
+          <img src="images/trainers/gen4m.png" alt="gen4 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen4f.png" alt="gen4 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+
+      <div id="gen5">
+        <div class="topic_gen">
+          <h1>Generation 5</h1>
+          <button onclick="myFunction5()" class="gen_submit5">
+            Read More...
+          </button>
+        </div>
+        <div id="gen5_desc" class="gen_desc">
+          <img src="images/trainers/gen5m.png" alt="gen5 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen5f.png" alt="gen5 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+
+      <div id="gen6">
+        <div class="topic_gen">
+          <h1>Generation 6</h1>
+          <button onclick="myFunction6()" class="gen_submit6">
+            Read More...
+          </button>
+        </div>
+        <div id="gen6_desc" class="gen_desc">
+          <img src="images/trainers/gen6m.png" alt="gen6 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen6f.png" alt="gen6 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+
+      <div id="gen7">
+        <div class="topic_gen">
+          <h1>Generation 7</h1>
+          <button onclick="myFunction7()" class="gen_submit7">
+            Read More...
+          </button>
+        </div>
+        <div id="gen7_desc" class="gen_desc">
+          <img src="images/trainers/gen7m.png" alt="gen7 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen7f.png" alt="gen7 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+
+      <div id="gen8">
+        <div class="topic_gen">
+          <h1>Generation 8</h1>
+          <button onclick="myFunction8()" class="gen_submit8">
+            Read More...
+          </button>
+        </div>
+        <div id="gen8_desc" class="gen_desc">
+          <img src="images/trainers/gen8m.png" alt="gen8 male trainer" class="trainer_pic trainer_left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae.
+          </p>
+          <img src="images/trainers/gen8f.png" alt="gen8 female trainer" class="trainer_pic trainer_right">
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="final">
+      <img id="left" src="images/left.png" alt="Serena.png" />
+      <!-- <div class="pair"> -->
+      <div id="about">
+        <h1>About Me</h1>
+        <p>Ankit Kumar</p>
+        <p>Studying in IIITDM Kurnool</p>
+        <p>B.Tech, CSE</p>
+      </div>
+      <div id="contact">
+        <h1>Feel free to contact me...</h1>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="E-Mail" />
+        <textarea
+          cols="30"
+          rows="3"
+          placeholder="Enter your message.."
+        ></textarea>
+        <button>Send Response</button>
+      </div>
+      <!-- </div> -->
+      <img id="right" src="images/right.png" alt="Red.png" />
+    </section>
+    <script>
+      function myFunction1() {
+        document.getElementById("gen1_desc").classList.toggle("show");
+      }
+      function myFunction2() {
+        document.getElementById("gen2_desc").classList.toggle("show");
+      }
+      function myFunction3() {
+        document.getElementById("gen3_desc").classList.toggle("show");
+      }
+      function myFunction4() {
+        document.getElementById("gen4_desc").classList.toggle("show");
+      }
+      function myFunction5() {
+        document.getElementById("gen5_desc").classList.toggle("show");
+      }
+      function myFunction6() {
+        document.getElementById("gen6_desc").classList.toggle("show");
+      }
+      function myFunction7() {
+        document.getElementById("gen7_desc").classList.toggle("show");
+      }
+      function myFunction8() {
+        document.getElementById("gen8_desc").classList.toggle("show");
+      }
+      
+      window.onclick = function (event) {
+        if (!event.target.matches(".gen_submit1")) {
+          var dropdown = document.getElementById("gen1_desc");
+        }
+        else if (!event.target.matches(".gen_submit2")) {
+          var dropdown = document.getElementById("gen2_desc");
+        }
+        else if (!event.target.matches(".gen_submit3")) {
+          var dropdown = document.getElementById("gen3_desc");
+        }
+        else if (!event.target.matches(".gen_submit4")) {
+          var dropdown = document.getElementById("gen4_desc");
+        }
+        else if (!event.target.matches(".gen_submit5")) {
+          var dropdown = document.getElementById("gen5_desc");
+        }
+        else if (!event.target.matches(".gen_submit6")) {
+          var dropdown = document.getElementById("gen6_desc");
+        }
+        else if (!event.target.matches(".gen_submit7")) {
+          var dropdown = document.getElementById("gen7_desc");
+        }
+        else if (!event.target.matches(".gen_submit8")) {
+          var dropdown = document.getElementById("gen8_desc");
+        }
+        
+        if (dropdown.classList.contains("show")) {
+            dropdown.classList.remove("show");
+        }
+      };
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+  </body>
+</html>

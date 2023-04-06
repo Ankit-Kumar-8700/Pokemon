@@ -1,0 +1,658 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+textarea{
+    resize: none;
+    width: 238px;
+    height: 46px;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    background-color: #160040;
+    align-items: center;
+}
+.navbar img{
+    width: 15%;
+    margin: 0.2rem 2vw;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 16vw;
+    z-index: 5;
+}
+.navbar li{
+    list-style: none;
+    margin: 1vw;
+}
+.navbar li > a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-size:19px;
+}
+.navbar li > a:after{
+    content: "";
+    display: block;
+    border-bottom: 0.1rem solid white;
+    width: 0%;
+    transition: ease-in 0.5s;
+}
+.dropdown-content a{
+    display: block;
+    border:2px solid black;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    background-color: gray;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 10;
+}
+.navbar li > a:hover::after{
+    width: 100%;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    min-width: auto;
+}
+#type:hover + .dropdown-content{
+    display:block;
+}
+.dropdown-content:hover {
+    display: block;
+}
+#l1:hover{
+    color: rgb(94, 46, 8);
+    background-color:rgb(241, 161, 94);
+    border-color: rgb(94, 46, 8);
+    font-weight: bold;
+}
+#l2:hover{
+    color: red;
+    background-color:rgb(236, 109, 109);
+    border-color: red;
+    font-weight: bold;
+}
+#l3:hover{
+    color: rgb(0, 78, 102);
+    background-color:rgb(114, 216, 247);
+    border-color: rgb(0, 78, 102);
+    font-weight: bold;
+}
+#l4:hover{
+    color: rgb(70, 2, 70);
+    background-color:rgb(184, 104, 184);
+    border-color: rgb(70, 2, 70);
+    font-weight: bold;
+}
+#l5:hover{
+    color: rgb(78, 57, 3);
+    background-color:rgb(250, 210, 110);
+    border-color: rgb(78, 57, 3);
+    font-weight: bold;
+}
+#l6:hover{
+    color: rgb(78, 33, 3);
+    background-color:rgb(182, 124, 85);
+    border-color: rgb(78, 33, 3);
+    font-weight: bold;
+}
+#l7:hover{
+    color: rgb(40, 59, 3);
+    background-color:rgb(185, 255, 46);
+    border-color: rgb(40, 59, 3);
+    font-weight: bold;
+}
+#l8:hover{
+    color: rgb(70, 3, 64);
+    background-color:rgb(121, 63, 116);
+    border-color: rgb(70, 3, 64);
+    font-weight: bold;
+}
+#l9:hover{
+    color: rgb(44, 44, 44);
+    background-color:rgb(184, 184, 184);
+    border-color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+#l10:hover{
+    color: rgb(194, 3, 3);
+    background-color:rgb(253, 74, 74);
+    border-color: rgb(194, 3, 3);
+    font-weight: bold;
+}
+#l11:hover{
+    background-color: rgba(87, 185, 241, 0.6);
+    border-color: rgb(2,2,59);
+    color: rgb(2, 2, 59);
+    font-weight: bold;
+}
+#l12:hover{
+    background-color: rgba(91, 248, 91,0.6);
+    border-color: rgb(5, 59, 5);
+    color: rgb(5, 59, 5);
+    font-weight: bold;
+}
+#l13:hover{
+    color: rgb(85, 85, 2);
+    background-color:rgb(196, 238, 46);
+    border-color: rgb(85, 85, 2);
+    font-weight: bold;
+}
+#l14:hover{
+    background-color: rgb(255, 0, 98);
+    color:rgb(68, 2, 27);
+    border-color: rgb(68, 2, 27);
+    font-weight: bold;
+}
+#l15:hover{
+    background-color: rgba(176, 232, 247,0.6);
+    border-color: rgb(5, 32, 68);
+    color: rgb(5, 32, 68);
+    font-weight: bold;
+}
+#l16:hover{
+    background-color: rgb(131, 57, 180);
+    color:rgb(35, 0, 58);
+    border-color: rgb(35, 0, 58);
+    font-weight: bold;
+}
+#l17:hover{
+    background-color: rgba(77, 73, 73,0.6);
+    border-color: black;
+    color: black;
+    font-weight: bold;
+}
+#l18:hover{
+    background-color: rgba(253, 182, 194,0.6);
+    border-color: rgb(78,4,17);
+    color: rgb(78, 4, 17);
+    font-weight: bold;
+}
+#game:hover + .dropdown-content{
+    display:block;
+}
+/* #searchbar{
+    padding-left: 15vw;
+    padding-right: 0.5vw;
+}
+#searchbar input{
+    padding: 0.2rem;
+}
+#btn input{
+    padding: 0.2rem;
+    cursor: pointer;
+} */
+
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+/*HOME*/
+.home{
+    text-align: center;
+    background-image: url(images/temp\ home.jpg); 
+    background-position-y: 6%;
+}
+.home h1{
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(24, 1, 46);
+}
+
+.home p{
+    font-size: 1.5rem;
+    color: rgb(46, 2, 87);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#ques{
+    margin-top: 1rem;
+}
+#choice button{
+    padding: 0.2rem;
+    margin:0.1rem 0rem 1rem 0.1rem;
+    cursor: pointer;
+    background-color: rgb(93, 39, 145);
+    border: 2px solid rgb(46, 2, 87);
+    border-radius: 0.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:beige;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#yes:hover{
+    background-color: rgb(12, 238, 12);
+    border-color:rgb(10, 68, 10);
+}
+#no:hover{
+    background-color: rgb(236, 30, 30);
+    border-color:rgb(153, 0, 0);
+}
+
+
+/*EEVEE*/
+.Eve{
+    background-image: url(images/temp\ evees2.jpg); 
+    background-size:contain;
+    margin-bottom: -1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Eve h1{
+    color:white;
+    padding-top: 1rem;;
+    font-size: 3rem;
+    text-align: center;
+}
+.eevee{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:1rem;
+    grid-template-areas: "a a a a"
+                         "b c d e"
+                         "f g h i";
+}
+.eevee img{
+    width:7rem;
+}
+.eevee div{
+    border-radius: 2rem;
+    margin:0.5rem 1rem;
+    text-align: center;
+    padding:1rem;
+}
+#Eevee{
+    grid-area: a;
+    padding-top: 0rem;
+    background-color: rgba(244, 164, 96,0.6);
+    border: 3px solid rgb(63, 2, 2);
+    color: rgb(63, 2, 2);
+}
+#Vaporeon{
+    grid-area: b;
+    background-color: rgba(87, 185, 241, 0.6);
+    border: 3px solid rgb(2,2,59);
+    color: rgb(2, 2, 59);
+}
+#Jolteon{
+    grid-area: c;
+    background-color: rgba(245, 245, 91,0.6);
+    border: 3px solid rgb(48,48,2);
+    color: rgb(48, 48, 2);
+}
+#Flareon{
+    grid-area: d;
+    background-color: rgba(252, 76, 76,0.6);
+    border: 3px solid rgb(59,1,1);
+    color:  rgb(59, 1, 1);
+}
+#Sylveon{
+    grid-area: e;
+    background-color: rgba(253, 182, 194,0.6);
+    border: 3px solid rgb(78,4,17);
+    color: rgb(78, 4, 17);
+}
+#Espeon{
+    grid-area: f;
+    background-color: rgba(252, 32, 252, 0.3);
+    border: 3px solid rgb(230, 188, 230);
+    color: rgb(241, 159, 241);
+}
+#Glaceon{
+    grid-area: g;
+    background-color: rgba(176, 232, 247,0.6);
+    border: 3px solid rgb(5, 32, 68);
+    color: rgb(5, 32, 68);
+}
+#Leafeon{
+    grid-area: h;
+    background-color: rgba(91, 248, 91,0.6);
+    border: 3px solid rgb(5, 59, 5);
+    color: rgb(5, 59, 5);
+}
+#Umbreon{
+    grid-area: i;
+    background-color: rgba(77, 73, 73,0.6);
+    border: 3px solid black;
+    color: black;
+}
+
+
+
+/*team*/
+.team{
+    display: block; 
+    background-color: black;
+}
+.team h1{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times;
+    padding-top: 1rem;;
+    font-size: 3rem;
+    text-align: center;
+}
+.myteam{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.myteam div{
+    margin:0.5rem;
+}
+#Lucario img,#Greninja img{
+    width: 10rem;
+}
+#Gardevoir img{
+    width:14rem;
+}
+#Dragonite img,#Garchomp img,#Charizard img{
+    width:12rem;
+}
+.info1,.info2,.info3,.info4,.info5,.info6{
+    background-color: #f9f9f9;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    padding: 12px 16px;
+    position: absolute;
+    width: 9rem;
+}
+#Garchomp img:hover + .info1{
+    display:block;
+}
+#Dragonite img:hover + .info2{
+    display:block;
+}
+#Greninja img:hover + .info3{
+    display:block;
+}
+#Lucario img:hover + .info4{
+    display:block;
+}
+#Charizard img:hover + .info5{
+    display:block;
+}
+#Gardevoir img:hover + .info6{
+    display:block;
+}
+
+
+
+/*Final*/
+.final{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-gap: 1rem;
+    color:white;
+    background-color: black;
+    align-items: center;
+    padding-top: 1rem;
+}
+#about{
+    text-align: right;
+    padding: 1rem;
+}
+#right{
+    width:15rem;
+}
+#contact h1{
+    font-size: xx-large;
+}
+#about h1{
+    font-size: xx-large;
+}
+#about p{
+    font-size: larger;
+}
+#contact input, #contact button{
+    width: 236px;
+    margin-bottom: 0.3rem;
+}
+#contact button{
+    width: 239px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#contact button:hover{
+    background-color: black;
+    border: 2px solid white;
+    color:white;
+}
+#contact {
+    padding-left: 1.9rem;
+    border-left:2px solid #ffffff;
+    display:block;
+}
+#left{
+    width:10rem;
+    margin-left: 3rem;
+}
+
+
+
+/*Types pages*/
+.info{
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding:3px;
+}
+.info img{
+    height:80px;
+}
+.info h1{
+    font-size: 2rem;
+    margin: 0px 3vw;
+}
+.info p{
+    padding: 3px;
+    font-size: 15px;
+}
+.typeHeading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.typeImages{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.typeImages img{
+    margin: 0px 3vw;
+}
+
+
+
+
+
+
+
+/* Games */
+#games-div{
+    max-width: 100vw;
+    overflow: hidden;
+    display: block;
+}
+.topic_gen{
+    display: flex;
+    padding:5px 30px;
+    color: white;
+    justify-content: space-between;
+    background-color: black;
+    border-top:2px solid #ffffff;
+}
+.topic_gen button{
+    position: relative;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 25px;
+}
+.gen_desc{
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 18, 18);
+    color:white;
+}
+.show{
+    display: flex;
+}
+.trainer_pic{
+    height: 200px;
+    margin: 10px 20px;
+}
+
+@media only screen and (max-width:960px){
+    #left,#right{
+        width: auto;
+        height:200px;
+    }
+}
+@media only screen and (max-width:875px){
+    #left,#right{
+        display: none;
+    }
+    .final{
+    grid-template-columns: 2fr 2fr;
+    padding: 20px;
+    }
+}
+@media only screen and (max-width:765px) {
+    .eevee{
+        grid-template-areas: none;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    #Eevee,#Vaporeon,#Jolteon,#Flareon,#Sylveon,#Espeon,#Glaceon,#Leafeon,#Umbreon{
+        grid-area: unset;
+    }
+    #eevee-desc{
+        display: none;
+    }
+    .home h1,.Eve h1{
+        font-size: 2rem;
+    }
+    .home p{
+        padding: 10px;
+    }
+    .info img {
+        height: 70px;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .navbar ul{
+        background-color: #160040;
+        border-radius: 0;
+    }
+    .nav-menu.active {
+        position: absolute;
+        left: -17%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .dropdown-content{
+        position: relative;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:525px){
+    .final{
+        grid-template-columns: 1fr;
+    }
+    #about{
+        border-right: 2px solid white;
+    }
+    .trainer_pic{
+        height: 150px;
+        max-width: 36vw;
+    }
+}
+@media only screen and (max-width:350px) {
+    #about h1, #contact h1{
+        font-size: 1.5rem;
+    }
+    #about p{
+        font-size: 1rem;
+    }
+    #contact button{
+        width:179px;
+    }
+    textarea{
+        width:177px;
+    }
+    #contact input{
+        width:175px;
+    }
+    .info img {
+        height: 50px;
+    }
+    .info h1{
+        font-size: 1.3rem;
+    }
+    .topic_gen{
+        flex-direction: column;
+    }
+    .trainer_pic{
+        height: 100px;
+        margin: 10px 5px;
+    }
+    .topic_gen h1{
+        font-size: 1.2rem;
+    }
+}

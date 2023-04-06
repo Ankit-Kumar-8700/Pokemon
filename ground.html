@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="Pikachu!!">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="/index.html">Home</a></li>
+            <li>
+                <a id="type" href="#">Types</a>
+                <div class="dropdown-content">
+                    <a href="/normal.html" id="l1">Normal</a>
+                    <a href="/fighting.html" id="l2">Fighting</a>
+                    <a href="/flying.html" id="l3">Flying</a>
+                    <a href="/poison.html" id="l4">Poison</a>
+                    <a href="/ground.html" id="l5">Ground</a>
+                    <a href="/rock.html" id="l6">Rock</a>
+                    <a href="/bug.html" id="l7">Bug</a>
+                    <a href="/ghost.html" id="l8">Ghost</a>
+                    <a href="/steel.html" id="l9">Steel</a>
+                    <a href="/fire.html" id="l10">Fire</a>
+                    <a href="/water.html" id="l11">Water</a>
+                    <a href="/grass.html" id="l12">Grass</a>
+                    <a href="/electric.html" id="l13">Electric</a>
+                    <a href="/psychic.html" id="l14">Psychic</a>
+                    <a href="/ice.html" id="l15">Ice</a>
+                    <a href="/dragon.html" id="l16">Dragon</a>
+                    <a href="/dark.html" id="l17">Dark</a>
+                    <a href="/fairy.html" id="l18">Fairy</a>
+                  </div>
+            </li>
+            <li>
+                <a id="game" href="/games.html">Games</a>
+            </li>
+            <li><a href="#contact">Get in touch</a></li>
+        </ul>
+        <!-- <div id="searchbar">
+            <input type="text" placeholder="Search Pokemon">
+        </div>
+        <div id="btn">
+            <input type="submit" value="Let's Go!!">
+        </div> -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </section>
+    <section class="info">
+        <div class="typeHeading">
+            <img src="images/ground/rhydon.png" alt="arceus.png">
+            <h1><u>Ground Type</u></h1>
+            <img src="images/ground/zygarde.png" alt="zygarde.png">
+        </div>
+        <p>Ground is one of the strongest types offensively: it is super-effective against five other types (as is Fighting) and Earthquake is one of the strongest moves in the game with power and accuracy both 100. Unfortunately, many Ground type Pokémon are dual Rock types, lumbering them with 4x Grass and Water disadvantages.</p>
+        <div class="typeImages">
+            <img src="images/ground/phanpy.png" alt="phanpy.png">
+            <img src="images/ground/cubone.gif" alt="cubone.gif">
+            <img src="images/ground/sandslash.png" alt="sandslash.png">
+        </div>
+        
+    </section>
+    <hr>
+    <section class="final">
+        <img id="left" src="images/left.png" alt="Serena.png">
+        <!-- <div class="pair"> -->
+            <div id="about">
+                <h1>About Me</h1>
+                <p>Ankit Kumar</p>
+                <p>Studying in IIITDM Kurnool</p>
+                <p>B.Tech, CSE</p>
+            </div>
+            <div id="contact">
+                <form action="mailto:ankitkumarrockingstar@gmail.com" method="post" enctype="text/plain">
+                <h1>Feel free to contact me...</h1>
+                <input type="text" name="Name" placeholder="Name">
+                <input type="email" name="E-Mail" placeholder="E-Mail">
+                <textarea name="Message" id="" cols="30" rows="3" placeholder="Enter your message.."></textarea>
+                <button type="submit">Send Mail</button>
+                </form>
+            </div>
+        <!-- </div> -->
+        <img id="right" src="images/right.png" alt="Red.png">
+    </section>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
